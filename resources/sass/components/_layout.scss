@@ -1,0 +1,127 @@
+section {
+    padding: 70px 0;
+
+    .pretitle {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 48px;
+        color:$brand-primary;
+
+        .highlighted {
+            color: lighten($brand-primary, 15%);
+        }
+    }
+
+    .pretitle + h1 {
+        margin-top: 5px;
+    }
+
+    hr {
+        border-color: $link-color;
+    }
+}
+
+
+/* Grey Section */
+.g {
+    background: #f2f2f2;
+}
+
+/* Dark Section */
+.dark {
+    background: #151515;
+
+    h1 {
+        color:white;
+    }
+}
+
+
+/* cta */
+.cta {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.cta h2 {
+    font-size: 42px;
+}
+
+/* features */
+.f-r {
+    text-align: right;
+    margin: 15px;
+}
+
+.f-l {
+    text-align: left;
+    margin: 15px;
+}
+
+.features {
+    padding: 10px;
+}
+
+.features:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.features p {
+    font-size: 16px;
+    color: #a0a0a0;
+    line-height: 26px;
+}
+
+.features h3 {
+    color: #D2527F;
+}
+
+/* Showcase Conf */
+#showcase {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: #D2527F;
+    color: white;
+}
+
+#showcase hr {
+    border: 1px solid #fff;
+    width: 120px;
+}
+
+/* Testimonial Section */
+#t {
+    background: url(../img/testimonials.jpg) no-repeat center top;
+    padding-top: 100px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 600px;
+    width: 100%;
+    color: white;
+    background-size: cover;
+}
+
+#t p {
+    color: white;
+}
+
+#t hr {
+    border-color: white;
+}
+
+
+@media screen and (max-width: 740px){
+    .f-r {
+        text-align: center;
+    }
+
+    .f-l {
+        text-align: center;
+    }
+}

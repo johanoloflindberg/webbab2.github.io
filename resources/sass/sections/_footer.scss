@@ -1,0 +1,33 @@
+
+/* FOOTER */
+
+#f {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: white;
+}
+
+#f input {
+    font-size: 18px;
+    min-height: 60px;
+    border-radius: 40px;
+    line-height: 24px;
+    padding: 16px 30px 20px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #e9f0f2;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+#f .subscribe-input {
+    float: left;
+    width: 95%;
+    text-align: left;
+}
+
+#f .subscribe-submit {
+    position: absolute;
+    right: 0;
+    padding-left: 28px;
+}

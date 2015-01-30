@@ -1,0 +1,125 @@
+/*******************
+ *
+ *      MENU
+ *
+ ******************/
+
+html,body {
+    min-height: 100%;
+    position: relative;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #fefefe;
+    padding-top: 100px;
+    pointer-events: none;
+    opacity: 1;
+    display: block;
+    transition: background 200ms ease,transform 400ms ease,z-index 10ms linear 400ms;
+    transform-origin: left bottom;
+    transform: skew(90deg);
+
+    &.open {
+        background: rgba(0,0,0,0.9);
+        z-index: 1000;
+        height: 100%;
+        transition: background 200ms ease,transform 400ms ease,z-index 10ms linear 0ms;
+        transform: skew(0deg);
+    }
+}
+
+.menu__items {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+    list-style: none;
+    pointer-events: auto;
+    text-align: center;
+}
+.menu__item {
+    color:white;
+    font-size: 60px;
+    font-size: 7vw;
+}
+
+
+/*******************
+ *
+ *      TOGGLE
+ *
+ ******************/
+#menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 0;
+    cursor: pointer;
+    z-index: 1000;
+
+
+    span {
+        position: relative;
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        transition: all .2s ease-in-out;
+
+        &:before, &:after {
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 28px;
+            height: 3px;
+            transition: all .2s ease-in-out;
+        }
+
+        &:before {
+            top: -8px;
+        }
+
+        &:after {
+            top: 8px;
+        }
+    }
+
+    &.active {
+        span {
+            background: transparent;
+
+            &:before {
+                transform: rotate(45deg) translate(5px, 6px);
+            }
+
+            &:after {
+                transform: rotate(-45deg) translate(5px, -6px);
+            }
+        }
+    }
+
+    &:not(.active):hover {
+        span {
+
+            &:before {
+                transform: rotate(8deg);
+            }
+
+            &:after {
+                transform: rotate(8deg);
+            }
+
+            transform: rotate(8deg);
+
+        }
+    }
+}

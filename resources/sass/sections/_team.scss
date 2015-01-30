@@ -1,0 +1,48 @@
+.team-member {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.member-pic {
+    border: 5px solid #ffffff;
+    border-radius: 3px;
+}
+
+.member-details {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 3px;
+    margin-top: -45px;
+    z-index: 1;
+    text-align: center;
+}
+
+.member-details h5 {
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.team-member .social-icons {
+    margin-top: 5px;
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.team-member .social-icons li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+.small-text {
+    font-size: 14px;
+}
