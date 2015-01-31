@@ -1,7 +1,12 @@
 .social {
+	padding: 40px 0;
     font-size: 30px;
 
     i {
         margin-right: 10px;
+    }
+
+    hr {
+    	border-color: $link-color; 
     }
 }

@@ -48,7 +48,7 @@ html,body {
 .menu__item {
     color:white;
     font-size: 60px;
-    font-size: 7vw;
+    font-size: 10vh; // % percent of window height
 }
 
 
@@ -119,6 +119,22 @@ html,body {
             }
 
             transform: rotate(8deg);
+
+        }
+    }
+
+    &.active:hover {
+        span {
+
+            background: transparent;
+
+            &:before {
+                transform: rotate(40deg) translate(5px, 6px);
+            }
+
+            &:after {
+                transform: rotate(-40deg) translate(5px, -6px);
+            }
 
         }
     }
