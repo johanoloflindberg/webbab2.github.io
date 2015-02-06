@@ -3,7 +3,7 @@
     // Menu settings
     $('#menu-toggle, .menu-close').on('click', function(){
         $('#menu-toggle').toggleClass('active');
-        $('html').toggleClass('menu-open');
+        $('html').toggleClass('menu-is-open');
         $('.menu').toggleClass('open');
     });
 
