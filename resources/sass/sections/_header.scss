@@ -3,13 +3,15 @@
     background: url(../img/header.jpg) no-repeat center top;
     // Alt image:
     // https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84
-    padding-top: 200px;
     text-align:center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 700px;
+    min-height: 340px;
     width: 100%;
     background-size: cover;
+    -moz-background-size: cover;
+
+    @media screen and (min-width: 480px) {
+        height: 700px;
+    }
 }
 
 .header hr {
@@ -19,13 +21,22 @@
 
 .header h1 {
     font-weight: 900;
-    font-size: 60px;
+    font-size: 30px;
     color: white;
+
+    @media screen and (min-width: 480px) {
+        font-size: 60px;
+    }
 }
 
 .header h2 {
+    padding-top: 80px;
     font-weight: 900;
     font-size: 60px;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 200px;
+    }
 }
 .header h2 span {
     display: block;

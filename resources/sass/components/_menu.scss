@@ -39,6 +39,7 @@ html,body {
 
 .menu__items {
     margin: 0 auto;
+    padding:0;
     max-width: 800px;
     width: 90%;
     list-style: none;
@@ -49,6 +50,10 @@ html,body {
     color:white;
     font-size: 60px;
     font-size: 10vh; // % percent of window height
+    
+    @media screen and (max-width: 480px) {
+        font-size: 13vw;
+    }
 }
 
 
@@ -59,14 +64,14 @@ html,body {
  ******************/
 #menu-toggle {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     padding: 12px 0;
     cursor: pointer;
     z-index: 1000;
 
-
+    // The lines
     span {
         position: relative;
         display: block;
@@ -93,6 +98,7 @@ html,body {
         }
     }
 
+    // When active
     &.active {
         span {
             background: transparent;
@@ -107,22 +113,8 @@ html,body {
         }
     }
 
-    &:not(.active):hover {
-        span {
 
-            &:before {
-                transform: rotate(8deg);
-            }
-
-            &:after {
-                transform: rotate(8deg);
-            }
-
-            transform: rotate(8deg);
-
-        }
-    }
-
+    // Hover over when active
     &.active:hover {
         span {
 
@@ -137,5 +129,10 @@ html,body {
             }
 
         }
+    }
+
+    // Hidden (when scrolled beneath header)
+    &.hidden {
+        display: none;
     }
 }
