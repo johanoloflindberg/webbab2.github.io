@@ -57,13 +57,12 @@ body {
     text-align: center;
 }
 .menu__item {
-
     color:white;
     font-size: 50px;
     font-size: 9vh; // % percent of window height
 
     @media screen and (max-width: 600px) {
-        font-size: 13vw;
+        font-size: 11vw;
     }
 }
 
