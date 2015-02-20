@@ -19,7 +19,7 @@ var scripts = [
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('public/js/ownit.js')
+    return gulp.src('assets/js/main.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -52,7 +52,7 @@ gulp.task('images', function () {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    //gulp.watch('public/js/*.js', ['lint', 'scripts']);
+    gulp.watch('assets/js/main.js', ['lint', 'scripts']);
     gulp.watch('resources/sass/**/*.scss', ['sass']);
 });
 
