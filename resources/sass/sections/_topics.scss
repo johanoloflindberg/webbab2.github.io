@@ -30,8 +30,12 @@ section.topics {
 }
 .topic__icon {
     .icon {
-        font-size: 400px;
+        font-size: 120px;
         line-height: 1;
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 400px;
+        }
     }
 }
 
