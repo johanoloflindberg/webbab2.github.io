@@ -7,6 +7,7 @@
 html,body {
     min-height: 100%;
     position: relative;
+    overflow-y: auto;
 
     @media screen and (min-width: $screen-md-min) {
         &.menu-is-open {
@@ -153,7 +154,6 @@ html:not(.menu-is-open) {
         // When scrolled
         &.scrolled {
             span, span:before, span:after {
-
                 background: black;
             }
         }
