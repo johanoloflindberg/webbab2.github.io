@@ -32,11 +32,10 @@ body {
     opacity:0;
     transition: transform 200ms ease-in, opacity 100ms ease-in;
     transform: translate3d(0,-100%,0);
-
     perspective: 1000;
 
     &.open {
-        background: rgba(0,0,0,0.9);
+        background: rgba($color-brand, 0.98);
         z-index: 1000;
         opacity: 1;
         transform: translate3d(0,0,0);
@@ -66,7 +65,6 @@ body {
 }
 
 .menu-is-open .wrapper {
-    position: fixed;
     overflow: hidden;
     width: 100%;
 }
@@ -144,11 +142,18 @@ body {
 
         }
     }
+}
 
-    // When scrolled
-    &.scrolled {
-        span, span:before, span:after {
-            background: black;
+// Fix color when scrolled
+html:not(.menu-is-open) {
+    #menu-toggle {
+
+        // When scrolled
+        &.scrolled {
+            span, span:before, span:after {
+
+                background: black;
+            }
         }
     }
 }
