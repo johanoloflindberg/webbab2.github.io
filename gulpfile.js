@@ -11,10 +11,10 @@ var imagemin = require('gulp-imagemin');
 var prefix = require('gulp-autoprefixer');
 
 var scripts = [
-    'public/js/libs/typeahead.bundle.js',
-    'public/js/libs/jquery.unslider.min.js',
-    'public/js/plugins.js',
-    'public/js/ownit.js'
+    'assets/js/vendor/jquery.1.11.2.js',
+    'assets/js/vendor/ie10-viewport-bug-workaround.js',
+    'assets/js/plugins.js',
+    'assets/js/main.js'
 ];
 
 // Lint Task
@@ -37,9 +37,9 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     return gulp.src(scripts)
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('public/js'))
+        .pipe(gulp.dest('assets/js'))
         .pipe(uglify())
-        .pipe(gulp.dest('public/js'))
+        .pipe(gulp.dest('assets/js'))
         .pipe(notify({ message: 'Scripts compiled!' }));
 });
 
