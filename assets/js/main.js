@@ -1,17 +1,18 @@
 (function($){
 
+    // Handle toggle menu
     var toggleMenu = function() {
         $('#menu-toggle').toggleClass('active');
         $('html').toggleClass('menu-is-open');
         $('.menu').toggleClass('open');
     };
 
-    // Menu settings
+    // Click on menu toggle
     $('#menu-toggle, .menu-close').on('click', function(){
         toggleMenu();
     });
 
-    // Menu scroll
+    // Click on menu icon
     $('.js-menu-item').on('click', function() {
         var id = $(this).attr('href').split('#')[1],
             $el = $('#' + id);
@@ -31,10 +32,10 @@
 
         $(window).scroll(function(){
             if ($(this).scrollTop() > height) {
-                $menuToggle.addClass('hidden');
+                $menuToggle.addClass('scrolled');
             }
             else {
-                $menuToggle.removeClass('hidden');
+                $menuToggle.removeClass('scrolled');
             }
         });
     })();

@@ -145,8 +145,10 @@ body {
         }
     }
 
-    // Hidden (when scrolled beneath header)
-    &.hidden {
-        display: none;
+    // When scrolled
+    &.scrolled {
+        span, span:before, span:after {
+            background: black;
+        }
     }
 }
