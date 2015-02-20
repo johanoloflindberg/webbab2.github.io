@@ -32,7 +32,15 @@ p {
 .centered {text-align: center}
 .mt {margin-top: 50px;}
 .mb {margin-bottom: 50px;}
-.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $screen-md-min) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 80px; padding-bottom: 80px;}
 
@@ -55,7 +63,7 @@ p {
     background:#2B2E31;
 }
 
-.nopadding {
+inde.nopadding {
     padding: 0 !important;
     margin: 0;
 }
