@@ -8,8 +8,10 @@ html,body {
     min-height: 100%;
     position: relative;
 
-    &.menu-is-open {
-        overflow-y: scroll;
+    @media screen and (min-width: $screen-md-min) {
+        &.menu-is-open {
+            overflow-y: scroll;
+        }
     }
 }
 body {
