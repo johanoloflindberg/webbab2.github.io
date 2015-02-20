@@ -2,22 +2,26 @@
     max-width: 600px;
     margin: 0 auto;
 }
+.container--l {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 section {
     padding: 70px 0;
 
     .pretitle {
         margin-bottom: 0;
+        color:#eee;
     }
 
     h1 {
-        margin-bottom: 50px;
-        font-weight: 600;
+        margin-bottom: 0;
         font-size: 48px;
         color:$brand-primary;
 
         .highlighted {
-            color: lighten($brand-primary, 15%);
+            opacity: 0.4;
         }
     }
 
@@ -26,7 +30,8 @@ section {
     }
 
     hr {
-        border-color: $link-color;
+        border-color:$brand-primary;
+        opacity: 0.3;
     }
 }
 
@@ -42,6 +47,23 @@ section {
 
     h1 {
         color:white;
+    }
+}
+
+/* Blue section */
+.b {
+    background: $color-brand;
+    color: white;
+
+    h1 {
+        color:white;
+    }
+    p {
+        color: white;
+    }
+
+    hr {
+        border-color: white;
     }
 }
 

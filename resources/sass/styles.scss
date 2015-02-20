@@ -1,3 +1,9 @@
+// Vars
+$color-brand: #6BB9F0;
+$color-amedia: #2c3e50;
+$color-ventures: #F0482F;
+$color-labs: #4c1aa8;
+
 // Fonts
 @import "partials/fonts";
 
@@ -19,6 +25,6 @@
 // Sections
 @import "sections/header";
 @import "sections/team";
-@import "sections/malibu";
+@import "sections/topics";
 @import "sections/contact";
 @import "sections/social";

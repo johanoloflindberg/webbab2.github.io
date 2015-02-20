@@ -1,5 +1,9 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .team-member {
-    margin-bottom: 50px;
     padding: 20px;
 }
 
@@ -19,6 +23,7 @@
     margin-top: -45px;
     z-index: 1;
     text-align: center;
+    color:#333;
 }
 
 .member-details h5 {
@@ -29,6 +34,7 @@
 
 .team-member .social-icons {
     margin-top: 5px;
+    padding:0;
     position: relative;
     list-style: none;
     text-align: center;
@@ -41,6 +47,10 @@
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 3px;
+
+    a {
+        color:white;
+    }
 }
 
 .small-text {

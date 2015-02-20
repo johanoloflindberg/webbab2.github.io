@@ -1,17 +1,24 @@
 .contact {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 50px;
+    }
+}
+.contact__item {
     color: #656565;
     text-align: center;
     padding: 30px 0 0;
     margin: 0;
 }
 
-.contact__label {
+.contact__item__label {
     text-transform: uppercase;
     padding-top: 30px;
     font-weight: bold;
-    color: #656565 !important;
+    color: #eee;
 }
 
-.contact__link {
-    font-size: 25px;
+.contact__item__link {
+    font-size: 30px;
 }

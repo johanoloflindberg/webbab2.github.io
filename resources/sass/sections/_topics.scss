@@ -1,0 +1,55 @@
+section.topics {
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        color: #a0a0a0;
+    }
+
+    p {
+        color: #8b8b8b;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
+
+.topic__content {
+
+    .icon {
+        position: relative;
+        top: 3px;
+        margin-left: 20px;
+        font-size: 26px;
+    }
+}
+.topic__icon {
+    .icon {
+        font-size: 400px;
+        line-height: 1;
+    }
+}
+
+.topic--amedia {
+
+    a, h2, .icon {
+        color:$color-amedia;
+    }
+}
+.topic--labs {
+
+    a, h2, .icon {
+        color:$color-labs;
+    }
+}
+.topic--ventures {
+
+    a, h2, .icon {
+        color:$color-ventures;
+    }
+}
