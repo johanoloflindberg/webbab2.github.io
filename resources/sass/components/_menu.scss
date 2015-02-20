@@ -58,10 +58,10 @@ body {
 
     color:white;
     font-size: 50px;
-    //font-size: 10vh; // % percent of window height
+    font-size: 9vh; // % percent of window height
 
-    @media screen and (max-width: 480px) {
-        //font-size: 13vw;
+    @media screen and (max-width: 600px) {
+        font-size: 13vw;
     }
 }
 
