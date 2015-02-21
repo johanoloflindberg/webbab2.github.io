@@ -59,11 +59,20 @@ body {
 .menu__item {
     color:white;
     font-size: 50px;
-    font-size: 9vh; // % percent of window height
 
     @media screen and (max-width: 600px) {
         font-size: 11vw;
     }
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        font-size: 50px;
+    }
+    
+    @media screen and (min-width: 1025px) {
+        font-size: 9vh; // % percent of window height
+    }
+    
+    
 }
 
 .menu-is-open .wrapper {
