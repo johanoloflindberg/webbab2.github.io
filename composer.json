@@ -1,0 +1,11 @@
+{
+  "name": "Adaptive Media",
+  "description": "Adaptive Media Homepage",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Victor Schelin",
+      "email": "victor@adaptivemedia.se"
+    }
+  ]
+}
